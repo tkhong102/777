@@ -120,7 +120,7 @@
             <tr *ngFor="let budget of budgets ;trackBy: trackId">
                 <td>{{budget.expectedTotal | currency}}</td>
                 <td>{{budget.actualTotal | currency}}</td>
-                <progress-bar [progress]= budget.actualTotal/budget.expectedTotal*100 [color-degraded]="{'0': '#488aff',  '100': '#FF0000'}">
+                <progress-bar [progress]= budget.actualTotal/budget.expectedTotal*100 [color-degraded]="{'0': '#488aff',  '-100': '#FF0000'}">
                 </progress-bar>
             </tr>
             </tbody>
